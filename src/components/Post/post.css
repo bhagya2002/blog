@@ -1,0 +1,56 @@
+.post {
+  width: 24.063rem;
+  margin: 0 1.563rem 2.5rem 1.563rem;
+}
+
+.post_image {
+  width: 100%;
+  height: 17.5rem;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.post_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post_category {
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  color: #be9656;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 0.938rem;
+  margin-right: 0.625rem;
+  cursor: pointer;
+}
+
+.post_title {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 0.938rem;
+  cursor: pointer;
+}
+
+.post_date {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 0.813rem;
+  color: #999;
+  margin-top: 0.938rem;
+}
+
+.post_description {
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(93, 93, 93);
+  line-height: 1.5rem;
+  margin-top: 0.938rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
