@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const usersRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 
 // secret settings
@@ -22,6 +23,7 @@ mongoose
 
 // set up routes for auth
 app.use("/api/auth", authRoute);
+app.use("/api/users", usersRoute);
 
 // set up routes for api (which it listens to)
 app.listen("5000", () => {
