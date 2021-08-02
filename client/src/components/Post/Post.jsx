@@ -1,6 +1,6 @@
 import "./post.css";
 
-export default function Post() {
+export default function Post({ post }) {
   return (
     <div className="post">
       <img
@@ -13,16 +13,13 @@ export default function Post() {
           <span className="post_category">Music</span>
           <span className="post_category">Life</span>
         </div>
-        <span className="post_title">Lorem ipsum dolor sit amet</span>
+        <span className="post_title">{post.title}</span>
         <hr />
-        <span className="post_date">1 hour ago</span>
+        <span className="post_date">
+          {new Date(post.createdAt).toDateString()}
+        </span>
       </div>
-      <p className="post_description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
-        excepturi? Eos error modi officia tenetur molestiae temporibus dicta,
-        soluta enim laborum iusto exercitationem? Quisquam fugit animi aliquam
-        magni enim harum!
-      </p>
+      <p className="post_description">{post.desc}</p>
     </div>
   );
 }

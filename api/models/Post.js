@@ -1,15 +1,13 @@
-// get connection to the mongoDB
 const mongoose = require("mongoose");
 
-// Post schema for the DB
 const PostSchema = new mongoose.Schema(
   {
     title: {
       type: String,
       required: true,
-      unque: true,
+      unique: true,
     },
-    description: {
+    desc: {
       type: String,
       required: true,
     },
@@ -23,11 +21,10 @@ const PostSchema = new mongoose.Schema(
     },
     categories: {
       type: Array,
-      required: true,
+      required: false,
     },
   },
   { timestamps: true }
 );
 
-// exporting the schema to the DB w/ specifcs to each field
 module.exports = mongoose.model("Post", PostSchema);
