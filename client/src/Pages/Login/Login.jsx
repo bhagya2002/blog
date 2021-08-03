@@ -22,21 +22,22 @@ export default function Login() {
       dispatch({ type: "LOGIN_FAILURE" });
     }
   };
+
   return (
     <div className="login">
       <span className="loginTitle">Login</span>
       <form className="loginForm" onSubmit={handleSubmit}>
         <label>Username</label>
         <input
-          className="loginInput"
           type="text"
+          className="loginInput"
           placeholder="Enter your username..."
           ref={userRef}
         />
         <label>Password</label>
         <input
-          className="loginInput"
           type="password"
+          className="loginInput"
           placeholder="Enter your password..."
           ref={passwordRef}
         />

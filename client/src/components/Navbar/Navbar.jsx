@@ -55,8 +55,8 @@ export default function Navbar() {
       <div className="nav_right">
         {user ? (
           <Link className="link" to="/settings">
-            {/* <i class="nav_image fas fa-user" ></i> */}
-            <img className="nav_image" src={PF + user.profilePic} alt="" />
+            {/* <i class="nav_image fas fa-user"></i> */}
+            <img className="topImg" src={PF + user.profilePic} alt="" />
           </Link>
         ) : (
           <ul className="nav_list">

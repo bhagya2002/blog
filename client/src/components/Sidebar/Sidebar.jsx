@@ -19,12 +19,13 @@ export default function Sidebar() {
       <div className="sidebar_item">
         <span className="sidebar_item-title">ABOUT ME</span>
         <img
-          src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
+          src="https://thumbs.dreamstime.com/b/blog-articles-abstract-concept-vector-illustration-menu-element-subscribe-publications-news-article-company-website-page-web-195088232.jpg"
           alt=""
         />
-        <p>
-          Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-          amet ex esse.Sunt eu ut nostrud id quis proident.
+        <p className="sidebar_item-text">
+          I am a software engineering intern, currently working at DevFacto
+          Technologies where I am closely working with clients to meet
+          stakeholder requirements.
         </p>
       </div>
       <div className="sidebar_item">
@@ -38,7 +39,7 @@ export default function Sidebar() {
         </ul>
       </div>
       <div className="sidebar_item">
-        <span className="sidebar_item-title">FOLLOW US</span>
+        <span className="sidebar_item-title">LET'S CONNECT</span>
         <div className="sidebar_social">
           <i class="sidebar_icon fab fa-facebook-f"></i>
           <i class="sidebar_icon fab fa-twitter"></i>
