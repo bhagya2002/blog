@@ -3,8 +3,9 @@
   height: 3.125rem;
   background-color: #fff;
   position: sticky;
-  top: 1rem;
+  top: 0rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   display: flex;
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
@@ -61,4 +62,13 @@
   color: #666;
   cursor: pointer;
   margin-right: 0.8rem;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  cursor: pointer;
 }

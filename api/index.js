@@ -3,6 +3,7 @@ const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const multer = require("multer");
+const path = require("path");
 const usersRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postsRoute = require("./routes/posts");
@@ -14,7 +15,10 @@ dotenv.config();
 // connect to database using json
 app.use(express.json());
 
+app.use("/images", express.static(path.join(__dirname, "images")));
+
 // connect to database using mongoose
+mongoose.set("useFindAndModify", false);
 mongoose
   .connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
