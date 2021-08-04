@@ -1,11 +1,11 @@
 .post {
-  width: 28rem;
+  width: 25rem;
   margin: 0 1.563rem 2.5rem 1.563rem;
   margin-top: 3rem;
 }
 
 .post_image {
-  width: 28rem;
+  width: 25rem;
   height: 280px;
   object-fit: cover;
   border-radius: 7px;
@@ -17,12 +17,13 @@
   align-items: center;
 }
 
-.post_category {
+.post_categories {
   font-family: "Varela Round", Arial, Helvetica, sans-serif;
   color: #be9656;
   font-size: 1rem;
   line-height: 1.25rem;
-  margin-top: 0.938rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
   margin-right: 0.625rem;
   cursor: pointer;
 }

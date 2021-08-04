@@ -1,5 +1,5 @@
 .header {
-  margin-top: 3.75rem;
+  margin-top: -4rem;
 }
 
 .header_titles {
@@ -13,13 +13,14 @@
 .header_titles-title-small {
   position: absolute;
   top: 8rem;
-  font-size: 1.25rem;
+  font-size: 2.65rem;
 }
 
 .header_titles-title-large {
   position: absolute;
-  top: 9.5rem;
-  font-size: 6rem;
+  top: 12.5rem;
+  font-size: 7rem;
+  color: rgb(255, 255, 255);
 }
 
 .header_image {

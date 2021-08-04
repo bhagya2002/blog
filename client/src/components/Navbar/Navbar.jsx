@@ -30,7 +30,7 @@ export default function Navbar() {
               HOME
             </Link>
           </li>
-          <li className="nav_list-item">
+          {/* <li className="nav_list-item">
             <Link to="/" className="link">
               ABOUT
             </Link>
@@ -39,7 +39,7 @@ export default function Navbar() {
             <Link to="/" className="link">
               CONTACT
             </Link>
-          </li>
+          </li> */}
           <li className="nav_list-item">
             <Link to="/write" className="link">
               WRITE
